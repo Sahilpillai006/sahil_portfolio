@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Sahil B Pillai</title>
+  <link rel="stylesheet" href="style/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <div class="logo"><a href="index.html" class="logo-circle">SB</a></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="https://github.com/Sahilpillai006" target="_blank">Github</a>
+      </div>
+      <div class="resume-btn"><a href="Sahil_B_pillai.pdf" download>Download Resume</a></div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="section-label reveal">Portfolio</div>
+    <h1 class="reveal reveal-delay-1">Things I've<br>Built.</h1>
+    <p class="reveal reveal-delay-2">A collection of robotics, computer vision and embedded systems projects — from drones to gesture recognition.</p>
+  </section>
+
+  <!-- Filter -->
+  <div class="filter-bar reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="robotics">Robotics</button>
+    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+    <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+    <button class="filter-btn" data-filter="ai">AI / ML</button>
+  </div>
+
+  <!-- Projects -->
+  <section class="projects-section">
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1" data-category="robotics cv">
+        <div class="card-header">
+          <div class="card-icon">🚁</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Fish Density Monitoring Drone</h3>
+          <p>Autonomous drone platform built on Pixhawk and Raspberry Pi that uses computer vision to estimate fish density in water bodies. Designed for aquaculture and marine research applications.</p>
+          <div class="card-tags">
+            <span class="tag">Pixhawk</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Drone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2" data-category="cv embedded">
+        <div class="card-header">
+          <div class="card-icon">🔍</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Crack Detection Using Computer Vision</h3>
+          <p>Edge-deployed crack inspection system on Raspberry Pi that processes camera feeds using OpenCV to detect surface cracks in real-time. Useful for structural health monitoring.</p>
+          <div class="card-tags">
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Image Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3" data-category="robotics cv ai">
+        <div class="card-header">
+          <div class="card-icon">🧍</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Human Detection for Disaster Response Drones</h3>
+          <p>Computer vision system designed to detect humans in disaster-hit environments using drone footage. Built to assist search and rescue operations by automating human identification from aerial views.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Drone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-4" data-category="ai cv robotics">
+        <div class="card-header">
+          <div class="card-icon">🤟</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Sign Language Recognition System</h3>
+          <p>Real-time hand gesture recognition system trained on a CNN model to translate sign language into text. Built to assist communication for the hearing impaired community.</p>
+          <div class="card-tags">
+            <span class="tag">CNN</span>
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-5" data-category="embedded">
+        <div class="card-header">
+          <div class="card-icon">⏰</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Arduino based digital Clock</h3>
+          <p>Arduino Nano-based digital clock with 92 hand-soldered LEDs on a dot PCB, driven by multiplexing for efficient pin usage. Time is set manually via switches — built entirely from scratch as part of a STEAM activity, no off-the-shelf display modules involved.</p>
+          <div class="card-tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">C++</span>
+            <span class="tag">multiplexing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-6" data-category="embedded">
+        <div class="card-header">
+          <div class="card-icon">🌡️</div>
+          <span class="card-status status-done">Completed</span>
+        </div>
+        <div class="card-body">
+          <h3>Mini Weather station</h3>
+          <p>ESP8266-based mini weather station using a DHT11 sensor and OLED display. Cycles through live temperature, humidity, heat index, comfort status and temperature trend on a 128×64 OLED. Also hosts a local web server accessible via browser at weatherstation.local — auto-refreshing every 5 seconds over WiFi, built entirely from scratch as part of a STEAM activity.</p>
+          <div class="card-tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">IoT</span>
+            <span class="tag">C++</span>
+            <span class="tag">Sensors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-banner">
+          <span id="modal-icon"></span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-header">
+            <h2 id="modal-title"></h2>
+            <button class="modal-close" id="modal-close">✕</button>
+          </div>
+          <div class="modal-status" id="modal-status"></div>
+          <p class="modal-description" id="modal-description"></p>
+          <div class="modal-section-label">Components & Tools</div>
+          <div class="modal-tags" id="modal-tags"></div>
+          <a href="#" target="_blank" class="modal-github" id="modal-github">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Sahil B Pillai</footer>
+
+  <script src="js/project.js"></script>
+
+</body>
+</html>
